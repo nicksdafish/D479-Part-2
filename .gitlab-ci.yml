@@ -1,15 +1,11 @@
-image: node:lts
-
 pages:
   stage: deploy
   script:
-    - npm install
-    - npm run build 
-    - mkdir -p public
-    - cp -r dist/* public/
+    - mkdir .public
+    - cp -r * .public
+    - mv .public public
   artifacts:
     paths:
       - public
   only:
-    - main  
- 
+    - main  # or 'master'
