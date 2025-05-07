@@ -1,67 +1,303 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #f0f0f0;
-  }
-  
-  .logo {
-    font-weight: bold;
-    font-size: 1.5rem;
-  }
-  
-  nav a {
-    margin-left: 1rem;
-    text-decoration: none;
-    color: #333;
-  }
-  
-  .hero {
-    text-align: center;
-    padding: 2rem;
-    background-color: #e0f7fa;
-    font-size: 2rem;
-    font-weight: bold;
-  }
-  
-  .features {
-    display: flex;
-    justify-content: space-around;
-    padding: 2rem;
-    background-color: #ffffff;
-  }
-  
-  .features div {
-    width: 30%;
-    text-align: center;
-    border: 1px solid #ccc;
-    padding: 1rem;
-    background-color: #f9f9f9;
-  }
-  
-  .info {
-    display: flex;
-    justify-content: space-around;
-    padding: 2rem;
-    background-color: #e8f5e9;
-  }
-  
-  .info div {
-    width: 30%;
-    text-align: center;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #cfd8dc;
-    font-size: 0.9rem;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #f0f0f0;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #3b5998;
+}
+
+nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #333;
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem;
+  background-color: #e0f7fa;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  background-color: #ffffff;
+}
+
+.features div {
+  width: 30%;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background-color: #f9f9f9;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  background-color: #e8f5e9;
+}
+
+.info div {
+  width: 30%;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #cfd8dc;
+  font-size: 0.9rem;
+  line-height: 60px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+}
+
+
+.contact-container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h1 {
+  margin-top: 0;
+  color: #333;
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 15px;
+  color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+.social-container {
+  margin: auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  transition: transform 0.2s ease;
+}
+
+.social-link i {
+  margin-right: 10px;
+}
+
+.social-link.fb {
+  background: #3b5998;
+}
+
+.social-link.tw {
+  background: #1da1f2;
+}
+
+.social-link.ig {
+  background: #e1306c;
+}
+
+.social-link.li {
+  background: #0077b5;
+}
+
+.social-link:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.signup-container {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  margin: auto;
+}
+
+.signup-container h1 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.signup-container p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.signup-form label {
+  text-align: left;
+  color: #555;
+  font-size: 14px;
+}
+
+.signup-form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.signup-form button {
+  padding: 12px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.signup-form button:hover {
+  background-color: #0056b3;
+}
+
+.features div {
+  color: white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.feature-attractions {
+  background-image: url('pics/attractions.jpg');
+}
+
+.feature-events {
+  background-image: url('pics/events.jpg');
+}
+
+.feature-stay {
+  background-image: url('pics/stay.jpg');
+}
+
+.feature-volcano {
+  background-image: url('pics/volcano.jpg');
+}
+
+.feature-rainforest {
+  background-image: url('pics/rainforest.jpg');
+}
+
+.feature-beaches {
+  background-image: url('pics/beach.jpg');
+}
+
+.feature-night-hike {
+  background-image: url('pics/night-hike.jpg');
+}
+
+.feature-dance-festival {
+  background-image: url('pics/dance-festival.jpg');
+}
+
+.feature-market {
+  background-image: url('pics/market.jpg');
+}
+
+.feature-accommodations {
+  background-image: url('pics/accommodations.jpg');
+}
+
+.feature-dining {
+  background-image: url('pics/dining.jpg');
+}
+
+.feature-transportation {
+  background-image: url('pics/transportation.jpg');
+}
+
+.features div h3,
+.features div p {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 6px;
+}
